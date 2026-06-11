@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>White Rabbit Digital | Helping Local Businesses Get Found</title>
+<title>White Rabbit Digital | Get Found by More Local Customers on Google</title>
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,39 +29,43 @@ body {
     margin: auto;
 }
 
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.hero h2 {
-    font-weight: 300;
-    color: #d0d0d0;
+    font-size: 3.8rem;
     margin-bottom: 20px;
 }
 
 .hero p {
     max-width: 700px;
     margin: auto;
-    color: #bfbfbf;
+    color: #cfcfcf;
+    font-size: 1.15rem;
     margin-bottom: 35px;
-    font-size: 1.1rem;
 }
 
 .btn {
     display: inline-block;
-    background: white;
-    color: black;
-    text-decoration: none;
     padding: 15px 30px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
 }
@@ -72,21 +80,21 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 50px;
+    font-size: 2rem;
 }
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 25px;
 }
 
 .card {
     background: #111;
-    padding: 30px;
-    border-radius: 10px;
     border: 1px solid #222;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .card h3 {
@@ -95,6 +103,16 @@ section {
 
 .card p {
     color: #cfcfcf;
+}
+
+.checklist {
+    max-width: 700px;
+    margin: auto;
+}
+
+.checklist li {
+    margin-bottom: 15px;
+    list-style: none;
 }
 
 .audit {
@@ -113,7 +131,6 @@ section {
 
 .contact p {
     margin: 10px 0;
-    color: #cfcfcf;
 }
 
 footer {
@@ -123,14 +140,10 @@ footer {
     color: #888;
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.hero h2 {
-    font-size: 1.2rem;
+.hero h1{
+    font-size:2.5rem;
 }
 
 }
@@ -139,18 +152,22 @@ footer {
 
 <body>
 
+<header>
+<div class="container">
+<div class="logo">WHITE RABBIT DIGITAL</div>
+</div>
+</header>
+
 <section class="hero">
 <div class="container">
 
-<h1>WHITE RABBIT DIGITAL</h1>
-
-<h2>Helping Local Businesses Get Found on Google</h2>
+<h1>Get Found by More Local Customers on Google</h1>
 
 <p>
-We help local businesses improve their Google visibility, rank higher in local search results, and turn more searches into paying customers.
+We help local businesses improve their Google visibility, rank higher on Google Maps, and attract more customers from local searches.
 </p>
 
-<a href="#contact" class="btn">Get a Free Visibility Audit</a>
+<a href="#contact" class="btn">Get Your Free Visibility Review</a>
 
 </div>
 </section>
@@ -158,28 +175,35 @@ We help local businesses improve their Google visibility, rank higher in local s
 <section>
 <div class="container">
 
-<h2 class="section-title">What We Do</h2>
+<h2 class="section-title">Our Services</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>Google Business Profile Optimization</h3>
 <p>
-Improve your Google Maps presence and make it easier for customers to find your business.
+Make your business easier to find on Google Maps and local search.
 </p>
 </div>
 
 <div class="card">
 <h3>Local SEO</h3>
 <p>
-Increase visibility when people search for services in your area.
+Improve your visibility when customers search for services in your area.
 </p>
 </div>
 
 <div class="card">
-<h3>Lead Generation</h3>
+<h3>Google Visibility Reviews</h3>
 <p>
-Generate more calls, enquiries, and customers from local search.
+Identify opportunities to improve your online presence and attract more customers.
+</p>
+</div>
+
+<div class="card">
+<h3>Simple Business Websites</h3>
+<p>
+Professional mobile-friendly websites designed for local businesses.
 </p>
 </div>
 
@@ -188,19 +212,35 @@ Generate more calls, enquiries, and customers from local search.
 </div>
 </section>
 
+<section>
+<div class="container">
+
+<h2 class="section-title">Why White Rabbit Digital?</h2>
+
+<ul class="checklist">
+<li>✓ Local Business Focused</li>
+<li>✓ Affordable Solutions</li>
+<li>✓ Clear Recommendations</li>
+<li>✓ Professional Support</li>
+<li>✓ Results-Driven Approach</li>
+</ul>
+
+</div>
+</section>
+
 <section class="audit">
 <div class="container">
 
-<h2 class="section-title">Free Visibility Audit</h2>
+<h2 class="section-title">Free Visibility Review</h2>
 
 <p>
-We'll review your Google Business Profile, local rankings, reviews, and online visibility to identify opportunities for growth.
+We review your Google Business Profile, reviews, photos, website presence, and local search visibility to identify opportunities for growth.
 </p>
 
 <br><br>
 
 <a href="mailto:thewhiterabbitdigital@gmail.com" class="btn">
-Request Your Free Audit
+Request a Free Review
 </a>
 
 </div>
@@ -213,7 +253,7 @@ Request Your Free Audit
 
 <p><strong>Naga Prashanthan</strong></p>
 
-<p>Business Consultant</p>
+<p>White Rabbit Digital</p>
 
 <p>📞 +60 19-775 2302</p>
 
