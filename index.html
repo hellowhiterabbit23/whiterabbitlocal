@@ -69,10 +69,8 @@ body{
 /* HERO */
 
 .hero{
-    min-height:100vh;
+    height:100vh;
     position:relative;
-    display:flex;
-    align-items:center;
     overflow:hidden;
 }
 
@@ -80,14 +78,15 @@ body{
     position:absolute;
     top:50%;
     left:50%;
+
     transform:translate(-50%,-50%);
 
-    font-size:28rem;
+    font-size:16rem;
     font-weight:900;
-    line-height:.85;
+    line-height:.82;
     letter-spacing:-8px;
 
-    color:rgba(255,255,255,0.18);
+    color:rgba(255,255,255,.10);
 
     z-index:1;
     pointer-events:none;
@@ -113,10 +112,31 @@ body{
     }
 
     50%{
-        transform:translate(-50%,-55%);
+        transform:translate(-50%,-48%);
     }
 }
+.scroll-indicator{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#fff;
+    font-size:.8rem;
+    letter-spacing:3px;
+    opacity:.7;
+    z-index:10;
+    animation:scrollPulse 2s infinite;
+}
 
+@keyframes scrollPulse{
+    0%,100%{
+        transform:translateX(-50%) translateY(0);
+    }
+
+    50%{
+        transform:translateX(-50%) translateY(8px);
+    }
+}
 .hero-content{
     position:relative;
     z-index:2;
@@ -277,13 +297,15 @@ section{
 
 <section class="hero" id="home">
 
-<div class="background-text">
-    WHITE<br>
-    RABBIT<br>
-    DIGITAL
+    <div class="background-text">
+        WHITE<br>
+        RABBIT<br>
+        DIGITAL
+    </div>
+
+<div class="scroll-indicator">
+    SCROLL ↓
 </div>
-
-
 
 </section>
 <section class="intro">
