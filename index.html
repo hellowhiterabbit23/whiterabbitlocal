@@ -76,29 +76,8 @@ body{
 }
 
 .background-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    font-size:6rem;
-    font-weight:900;
-    line-height:1;
-    letter-spacing:-4px;
-    white-space:nowrap;
-
-    color:rgba(255,255,255,.14);
-
-    z-index:1;
-    pointer-events:none;
-    user-select:none;
-
-    animation:
-        fadeIn 1.8s ease,
-        float 5s ease-in-out infinite;
+    display:none;
 }
-
 @keyframes fadeIn{
     from{
         opacity:0;
