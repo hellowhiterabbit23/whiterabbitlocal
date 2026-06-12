@@ -69,14 +69,28 @@ body{
 /* HERO */
 
 .hero{
-    height:300px;
+    height:80vh;
     position:relative;
     overflow:hidden;
-    border:2px solid red;
 }
 
 .background-text{
-    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    font-size:8rem;
+    font-weight:900;
+    letter-spacing:-6px;
+    line-height:.9;
+
+    color:rgba(255,255,255,.18);
+
+    text-align:center;
+    white-space:nowrap;
+
+    animation:fadeIn 2s ease;
 }
 @keyframes fadeIn{
     from{
