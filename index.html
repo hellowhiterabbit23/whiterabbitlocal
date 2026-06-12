@@ -78,19 +78,43 @@ body{
 
 .background-text{
     position:absolute;
-    left:15%;
     top:50%;
-    transform:translateY(-50%);
+    left:50%;
+    transform:translate(-50%,-50%);
 
-    font-size:18rem;
+    font-size:28rem;
     font-weight:900;
     line-height:.85;
+    letter-spacing:-8px;
 
-    color: rgba(255,255,255,0.09);
+    color:rgba(255,255,255,0.18);
 
     z-index:1;
     pointer-events:none;
     user-select:none;
+
+    animation:
+        fadeIn 1.8s ease,
+        float 8s ease-in-out infinite;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translate(-50%,-50%);
+    }
+
+    50%{
+        transform:translate(-50%,-55%);
+    }
 }
 
 .hero-content{
@@ -259,11 +283,16 @@ section{
     DIGITAL
 </div>
 
-<div class="hero-content">
-<h1>
-    Rank Higher on Google.<br>
-    Get More Local Customers.
-</h1>
+
+
+</section>
+<section class="intro">
+    <div class="container">
+
+        <h1>
+            Rank Higher on Google.<br>
+            Get More Local Customers.
+        </h1>
 
         <p>
             White Rabbit Digital helps local businesses improve Google
@@ -276,9 +305,7 @@ section{
         </a>
 
     </div>
-
 </section>
-
 <!-- SERVICES -->
 
 <section id="services">
