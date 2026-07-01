@@ -172,32 +172,44 @@ section {
 
 /* SERVICES */
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.services-intro{
+    max-width:700px;
+    margin:20px auto 60px;
+    text-align:center;
+    color:#bdbdbd;
+    font-size:1.1rem;
+    line-height:1.7;
 }
 
-.service-card {
-    border: 1px solid #222;
-    padding: 35px;
-    transition: 0.3s;
-    background: #050505;
+.service-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:16px;
+    padding:28px;
+    transition:0.3s ease;
+    cursor:pointer;
 }
 
-.service-card:hover {
-    border-color: #555;
-    transform: translateY(-4px);
+.service-card:hover{
+    transform:translateY(-8px);
+    border:1px solid #22c55e;
 }
 
-.service-card h3 {
-    margin-bottom: 20px;
-    font-size: 1.3rem;
+.service-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(34,197,94,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
 }
 
-.service-card p {
-    color: #bbb;
-    line-height: 1.7;
+.service-icon svg{
+    width:34px;
+    height:34px;
+    color:#22c55e;
 }
 
 /* RESULTS */
@@ -350,40 +362,72 @@ section {
 </section>
 
 <!-- SERVICES -->
-
 <section id="services">
     <div class="container">
+
         <h2 class="section-title">Services</h2>
-        <p class="section-intro">
-            We help local businesses show up better on Google, get found by more nearby customers,
-            and turn searches into real visits.
+
+        <p class="services-intro">
+            We help local businesses show up higher on Google, get found by more nearby customers,
+            and turn searches into real enquiries.
         </p>
+
         <div class="services-grid">
+
+            <!-- Google Business Profile -->
             <div class="service-card">
-                <h3>Google Business Profile</h3>
+                <div class="service-icon">
+                    <i data-lucide="store"></i>
+                </div>
+
+                <h3>Google Business Profile Optimization</h3>
+
                 <p>
-                    We improve your Google Business Profile so customers can easily find your hours, photos, and contact details.
+                    We optimize your Google Business Profile so more local customers can find, trust and contact your business.
                 </p>
             </div>
+
+            <!-- Google Maps -->
             <div class="service-card">
+                <div class="service-icon">
+                    <i data-lucide="map-pin"></i>
+                </div>
+
                 <h3>Google Maps Visibility</h3>
+
                 <p>
                     We help your business show up more often on Google Maps when nearby customers are searching for services like yours.
                 </p>
             </div>
+
+            <!-- Local SEO -->
             <div class="service-card">
+                <div class="service-icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+
                 <h3>Local SEO</h3>
+
                 <p>
                     We improve your website and local search presence so Google understands what you do and where you do it.
                 </p>
             </div>
+
+            <!-- Reviews -->
             <div class="service-card">
+                <div class="service-icon">
+                    <i data-lucide="star"></i>
+                </div>
+
                 <h3>Reviews</h3>
+
                 <p>
                     We help you get more genuine reviews and build trust so new customers feel confident choosing your business.
                 </p>
             </div>
+
         </div>
+
     </div>
 </section>
 
@@ -424,6 +468,8 @@ section {
 
 <!-- CONTACT -->
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
     <h2 class="section-title">Let's Talk</h2>
@@ -438,6 +484,13 @@ section {
     </a>
 
 </section>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 </html>
