@@ -226,25 +226,39 @@ section {
 }
 /* RESULTS */
 
-.results{
-    border-top:1px solid #222;
-    border-bottom:1px solid #222;
-    text-align:center;
+.results {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
 }
 
-.result-box{
-    max-width:700px;
-    margin:0 auto;
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.result-box h3{
-    font-size:2rem;
-    margin-bottom:20px;
+.result-card {
+    border: 1px solid #222;
+    background: #050505;
+    padding: 35px;
+    transition: 0.3s;
 }
 
-.result-box p{
-    color:#bbb;
-    line-height:1.8;
+.result-card:hover {
+    border-color: #555;
+    transform: translateY(-4px);
+}
+
+.result-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.result-card p {
+    color: #b8b8b8;
+    line-height: 1.8;
 }
     
 <!-- ABOUT -->
@@ -456,21 +470,30 @@ section {
 
 <section class="results" id="results">
     <div class="container">
-
-        <div class="result-box">
-
-            <h2 class="section-title">Results</h2>
-
-            <h3>Helping Local Businesses Get Found</h3>
-
-            <p>
-                We focus on improving local visibility, increasing calls,
-                website visits and customer enquiries through Google Search
-                and Google Maps.
-            </p>
-
+        <h2 class="section-title">Results</h2>
+        <p class="section-intro">
+            We focus on what matters most for local businesses: better visibility, more enquiries, and stronger trust on Google.
+        </p>
+        <div class="results-grid">
+            <div class="result-card">
+                <h3>Better Google Maps Visibility</h3>
+                <p>
+                    We help your business appear more clearly and more often when nearby customers search on Google Maps.
+                </p>
+            </div>
+            <div class="result-card">
+                <h3>More Calls and Enquiries</h3>
+                <p>
+                    A stronger Google presence can lead to more calls, website visits, direction requests, and customer enquiries.
+                </p>
+            </div>
+            <div class="result-card">
+                <h3>Stronger Local Trust</h3>
+                <p>
+                    Clear business information, better reviews, and a stronger profile help customers feel more confident choosing you.
+                </p>
+            </div>
         </div>
-
     </div>
 </section>
 
